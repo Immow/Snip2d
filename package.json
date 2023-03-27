@@ -1,0 +1,20 @@
+{
+  "name": "Snip2d",
+  "displayName": "Snip2d",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "luajit",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
