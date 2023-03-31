@@ -4,7 +4,7 @@
 	"icon": "img/icon.png",
 	"publisher": "FluxGameDesign",
 	"description": "Snippets for all love2d functions",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.76.0"
 	},
