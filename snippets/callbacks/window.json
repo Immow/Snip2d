@@ -1,0 +1,65 @@
+{
+	"love.focus": {
+		"prefix": "love.focus",
+		"body":[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}focus(${2:focus})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when window receives or loses focus."
+	},
+	"love.resize": {
+		"prefix": "love.resize",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}resize(${2:w}, ${3:h})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when the window is resized, for example if the user resizes the window, or if love.window.setMode is called with an unsupported width or height in fullscreen and the window chooses the closest appropriate size. Calls to love.window.setMode will only trigger this event if the width or height of the window after the call doesn't match the requested width and height. This can happen if a fullscreen mode is requested which doesn't match any supported mode, or if the fullscreen type is 'desktop' and the requested width or height don't match the desktop resolution."
+	},
+	"love.directorydropped": {
+		"prefix": "love.directorydropped",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}directorydropped(${2:path})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a directory is dragged and dropped onto the window."
+	},
+	"love.displayrotated": {
+		"prefix": "love.displayrotated",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}displayrotated(${2:index}, ${3:orientation})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a directory is dragged and dropped onto the window."
+	},
+	"love.filedropped": {
+		"prefix": "love.filedropped",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}filedropped(${2:file})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a file is dragged and dropped onto the window."
+	},
+	"love.visible": {
+		"prefix": ["love.visible", "visible"],
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}visible(${2:visible})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when window is minimized/hidden or unminimized by the user."
+	},
+	"love.mousefocus": {
+		"prefix": "love.mousefocus",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}mousefocus(${2:focus})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when window receives or loses mouse focus."
+	}
+}

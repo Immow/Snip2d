@@ -1,20 +1,57 @@
 {
-  "name": "Snip2d",
-  "displayName": "Snip2d",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.76.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "luajit",
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ]
-  }
+	"name": "love2dsnippets",
+	"displayName": "Love2d Snippets",
+	"icon": "images/icon.svg",
+	"publisher": "pixelwar",
+	"description": "Snippets for all love2d functions",
+	"version": "2.0.0",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "lua",
+				"path": "./snippets/love2d.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/general.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/window.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/keyboard.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/mouse.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/touch.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/callbacks/joystick.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e3100455-813e-40a5-b1ae-74c05bb404e6",
+		"publisherId": "178fdb79-bcf7-4fb0-ac09-1cfe449d0fa0",
+		"publisherDisplayName": "pixelwar",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679946326121,
+		"preRelease": false
+	}
 }

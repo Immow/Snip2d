@@ -1,0 +1,74 @@
+{
+	"love.draw": {
+		"prefix": "love.draw",
+		"body":[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}draw()",
+			"\t${3:}",
+			"end"
+		],
+		"description": "Callback function used to draw on the screen every frame."
+	},
+	"love.errhand": {
+		"prefix": "love.errhand",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}errhand(${2:msg})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "The error handler, used to display error messages."
+	},
+	"love.load": {
+		"prefix": "love.load",
+		"body":[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}load()",
+			"\t${0:}",
+			"end"
+		],
+		"description": "This function is called exactly once at the beginning of the game."
+	},
+	"love.quit": {
+		"prefix": "love.quit",
+		"body":[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}quit()",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when the game is closed."
+	},
+	"love.update": {
+		"prefix": "love.update",
+		"body":[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}update(dt)",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a key is pressed."
+	},
+	"love.threaderror": {
+		"prefix": "love.threaderror",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}threaderror(${2:thread}, ${3:errorstr})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a Thread encounters an error."
+	},
+	"love.lowmemory": {
+		"prefix": "love.lowmemory",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}lowmemory()",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when the system is running out of memory on mobile devices.  Mobile operating systems may forcefully kill the game if it uses too much memory, so any non-critical resource should be removed if possible (by setting all variables referencing the resources to nil, and calling collectgarbage, when this event is triggered. Sounds and images in particular tend to use the most memory."
+	},
+	"love.run": {
+		"prefix": "love.run",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}run()",
+			"\t${0:}",
+			"end"
+		],
+		"description": "The main function, containing the main loop. A sensible default is used when left out."
+	}
+}

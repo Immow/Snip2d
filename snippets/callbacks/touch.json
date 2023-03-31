@@ -1,0 +1,29 @@
+{
+	"love.touchmoved": {
+		"prefix": "love.touchmoved",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}touchmoved(${2:id}, ${3:x}, ${4:y}, ${5:dx}, ${6:dy}, ${7:pressure})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a touch press moves inside the touch screen."
+	},
+	"love.touchpressed": {
+		"prefix": "love.touchpressed",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}touchpressed(${2:id}, ${3:x}, ${4:y}, ${5:dx}, ${6:dy}, ${7:pressure})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when the touch screen is touched."
+	},
+	"love.touchreleased": {
+		"prefix": "love.touchreleased",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}touchreleased(${2:id}, ${3:x}, ${4:y}, ${5:dx}, ${6:dy}, ${7:pressure})",
+			"\t${0:}",
+			"end"
+	],
+		"description": "Callback function triggered when the touch screen stops being touched."
+	}
+}

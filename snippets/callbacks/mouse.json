@@ -1,0 +1,39 @@
+{
+	"love.mousemoved": {
+		"prefix": "love.mousemoved",
+		"body":
+		[
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}mousemoved(${2:x}, ${3:y}, ${4:dx}, ${5:dy})",
+			"\t${0:}",
+			"end"
+	],
+		"description": "Callback function triggered when the mouse is moved."
+	},
+	"love.mousepressed": {
+		"prefix": "love.mousepressed",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}mousepressed(${2:x}, ${3:y}, ${4:button}, ${5:isTouch})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a mouse button is pressed."
+	},
+	"love.mousereleased": {
+		"prefix": "love.mousereleased",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}mousereleased(${2:x}, ${3:y}, ${4:button}, ${5:isTouch})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a mouse button is released."
+	},
+	"love.wheelmoved": {
+		"prefix": "love.wheelmoved",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}wheelmoved(${2:x}, ${3:y})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when the mouse wheel is moved."
+	}
+}

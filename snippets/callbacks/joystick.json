@@ -1,0 +1,83 @@
+{
+	"love.gamepadaxis": {
+		"prefix": "love.gamepadaxis",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}gamepadaxis(${2:joystick}, ${3:axis})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a Joystick's virtual gamepad axis is moved."
+	},
+	"love.gamepadpressed": {
+		"prefix": "love.gamepadpressed",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}gamepadpressed(${2:joystick}, ${3:button})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a Joystick's virtual gamepad button is pressed."
+	},
+	"love.gamepadreleased": {
+		"prefix": "love.gamepadreleased",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}gamepadreleased(${2:joystick}, ${3:button})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a Joystick's virtual gamepad button is released."
+	},
+	"love.joystickadded": {
+		"prefix": "love.joystickadded",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickadded(${2:joystick})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a Joystick is connected. This callback is also triggered after love.load for every Joystick which was already connected when the game started up."
+	},
+	"love.joystickaxis": {
+		"prefix": "love.joystickaxis",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickaxis(${2:joystick}, ${3:axis}, ${4:value})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a joystick axis moves."
+	},
+	"love.joystickhat": {
+		"prefix": "love.joystickhat",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickhat(${2:joystick}, ${3:hat}, ${4:direction})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a joystick hat direction changes."
+	},
+	"love.joystickpressed": {
+		"prefix": "love.joystickpressed",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickpressed(${2:joystick}, ${3:button})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a joystick button is pressed."
+	},
+	"love.joystickreleased": {
+		"prefix": "love.joystickreleased",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickreleased(${2:joystick}, ${3:button})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a joystick button is released."
+	},
+	"love.joystickremoved": {
+		"prefix": "love.joystickremoved",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}joystickremoved(${2:joystick})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when a Joystick is disconnected."
+	}
+}

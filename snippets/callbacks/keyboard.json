@@ -1,0 +1,38 @@
+{
+	"love.keypressed": {
+		"prefix": "love.keypressed",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}keypressed(${2:key}, ${3:scancode}, ${4:isrepeat})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a key is pressed."
+	},
+	"love.keyreleased": {
+		"prefix": "love.keyreleased",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}keyreleased(${2:key})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Callback function triggered when a keyboard key is released."
+	},
+	"love.textinput": {
+		"prefix": "love.textinput",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}textinput(${2:text})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when text has been entered by the user. For example if shift-2 is pressed on an American keyboard layout, the text \"@\" will be generated."
+	},
+	"love.textedited": {
+		"prefix": "love.textedited",
+		"body": [
+			"function ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}:}textedited(${2:text}, ${3:start}, ${4:length})",
+			"\t${0:}",
+			"end"
+		],
+		"description": "Called when the candidate text for an IME (Input Method Editor) has changed. The candidate text is not the final text that the user will eventually choose. Use love.textinput for that."
+	}
+}
