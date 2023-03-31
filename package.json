@@ -1,12 +1,12 @@
 {
-	"name": "love2dsnippets",
-	"displayName": "Love2d Snippets",
-	"icon": "images/icon.svg",
-	"publisher": "pixelwar",
+	"name": "snip2d",
+	"displayName": "Snip2D",
+	"icon": "img/icon.png",
+	"publisher": "FluxGameDesign",
 	"description": "Snippets for all love2d functions",
-	"version": "2.0.0",
+	"version": "0.0.1",
 	"engines": {
-		"vscode": "0.10.x"
+		"vscode": "^1.76.0"
 	},
 	"categories": [
 		"Snippets"
@@ -42,16 +42,5 @@
 				"path": "./snippets/callbacks/joystick.json"
 			}
 		]
-	},
-	"__metadata": {
-		"id": "e3100455-813e-40a5-b1ae-74c05bb404e6",
-		"publisherId": "178fdb79-bcf7-4fb0-ac09-1cfe449d0fa0",
-		"publisherDisplayName": "pixelwar",
-		"targetPlatform": "undefined",
-		"isApplicationScoped": false,
-		"updated": false,
-		"isPreReleaseVersion": false,
-		"installedTimestamp": 1679946326121,
-		"preRelease": false
 	}
 }
